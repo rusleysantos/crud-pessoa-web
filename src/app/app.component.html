@@ -1,71 +1,25 @@
-<div class="row">
 
-  <div class="col-md-12">
+<div class="row" style="padding-top:10px">
+  <div class="col-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active text-center" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Cadastar</a>
+      <a class="nav-link text-center" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Consultar</a>
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
-    <div class="card ">
+        <div class="col-md-12">
+          <app-cadastro></app-cadastro>
+        </div>
 
-      <div class="card-header text-center">
-        Cadastro
       </div>
-      <div class="card-body">
 
-        <div class="row">
-          <div class="col-md-4 form-group">
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" class="form-control" />
-          </div>
-
-          <div class="col-md-4 form-group">
-            <label for="telefone">Telefone</label>
-            <input id="telefone" type="text" class="form-control" />
-          </div>
-
-          <div class="col-md-4 form-group">
-            <label for="cpf">Cpf</label>
-            <input id="cpf" type="text" class="form-control" />
-          </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-4 form-group">
-            <label for="numero">Cep:</label>
-            <input id="numero" type="text" class="form-control" />
-          </div>
-
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <button class="btn btn-primary">Verificar</button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <label for="rua">Rua:</label>
-              <input id="rua" type="text" class="form-control" />
-            </div>
-
-
-
-            <div class="col-md-4 form-group">
-              <label for="cpf">Cpf</label>
-              <input id="cpf" type="text" class="form-control" />
-            </div>
-          </div>
-
-          Nome
-          ■ rua
-          ■ Número
-          ■ CEP
-          ■ Bairro
-          ■ UF
-
-        </div>
-        <div class="card-footer text-muted text-right">
-          <a href="#" class="btn btn-primary">Cadastrar</a>
-        </div>
-
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        <app-consulta></app-consulta>
       </div>
 
     </div>
-
   </div>
+</div>
