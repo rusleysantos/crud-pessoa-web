@@ -115,8 +115,7 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "CadastroPessoa:serve:production",
-			  "Teste": "Teste"
+              "devServerTarget": "CadastroPessoa:serve:production"
             }
           }
         }
